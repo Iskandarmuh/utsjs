@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokument</title>
+</head>
+<body>
+    <input id="clik" type="button" value="Booking"/>
+    <script>
+        const clik = document.getElementById("clik");
+        clik.onclick = function hotel(){
+            document.write(Hotel.hello)
+            
+        }
+        function Hotel(namahotel, alamat, jmlkamar, fasilitas, kualifikasi) {
+            this.namahotel = namahotel;
+            this.alamat = alamat;
+            this.jmlkamar = jmlkamar;
+            this.fasilitas = fasilitas;
+            this.kualifikasi = kualifikasi;
+            this.hello = function (name) {
+                console.info(`Selamat ${name} Anda telah Berhasil Boking Hotel ${this.namahotel}, ${this.alamat}, ${this.jmlkamar},
+                            ${this.fasilitas}, ${this.kualifikasi}`)
+            }
+            
+            const Hotel = new hotel("bungalow", "kuta", "12", "Lainnya", "Terbaik");
+            hotel.hello("Iskandar")
+        }
+    </script>
+</body>
+</html>

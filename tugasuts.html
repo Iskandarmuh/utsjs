@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="dataMhs" class="dataMhs">
+        <h1></h1>
+        <p></p>
+    </div>
+    
+    <script>
+      
+        const buah = {
+            buah1: "Buah Pepaya",
+            buah2: "Buah Jeruk",
+            buah3: "Buah Mangga",
+            buah4: "Buah Mentega",
+            buah5: "Buah Durian",
+
+        };
+        for (buah1 = 0;  buah1 < 1; buah1++) {
+            console.info(`a ${buah.buah1}`)
+        }
+        for (buah2 = 0;  buah2 < 1; buah2++) {
+            console.info(`b ${buah.buah2}`)
+              
+        }
+            
+        for (buah3 = 0;  buah3 < 1; buah3++) {
+            console.info(`c ${buah.buah3}`)
+              
+        }
+
+        for (buah4 = 0;  buah4 < 1; buah4++) {
+            console.info(`d ${buah.buah4}`)
+              
+        }
+
+        for (buah5 = 0;  buah5 < 1; buah5++) {
+        console.info(`e ${buah.buah5}`)
+              
+        }
+        
+
+        const data = document.getElementById("dataMhs");
+
+        const salam = document.createElement("h1");
+        salam.textContent = "Selamat Ujian UTS Framework JS";
+        dataMhs.appendChild(salam);
+
+        const Nama = document.createElement("p");
+        Nama.textContent = "Nama : Iskandar";
+        dataMhs.appendChild(Nama);
+
+        const Nim = document.createElement("p");
+        Nim.textContent = "Nim : SI17200019";
+        dataMhs.appendChild(Nim);
+
+        const Prodi = document.createElement("p");
+        Prodi.textContent = "Jurusan : Sistem Informasi";
+        dataMhs.appendChild(j);
+
+        // var image = new gambar(100, 100);
+        // image.src ='Greeg.jpg';
+        // g = document.getElementById("image");
+        // g.appendChild(image);
+
+        const name = prompt("Silahkan Masukkan Nama Anda :")
+        jam = prompt("masukkan jam:");
+
+        alert(`Hello ${name}`)
+
+       if (jam <= 11) {
+        alert("selamat Pagi");
+       }else if(jam > 11 && jam <= 14){
+        alert("selamat Siang");
+       }else if (jam > 14 && jam < 20) {
+        alert("selamat Sore");
+       }else if(jam <= 24){
+        alert("selamat Malam");
+       }
+
+        let images = document.getElementById
+
+    </script>
+</body>
+</html>
